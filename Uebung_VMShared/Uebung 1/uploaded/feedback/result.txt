@@ -1,0 +1,31 @@
+Total Points: 10 / 20
+
+
+Overview of tests:
+----------------
+RGB_Cube: 6 / 6
+Gravity: 2 / 6
+Color Matching: 2 / 8
+
+
+Detail of tests:
+----------------
+RGB_Cube:
+All tests of this exercise passed.
+
+Gravity:
+test "TestGenerateGrid" failed: TestGenerateGrid: generating grid with N=1 failed. wrong number of triangles. expected return value 2, actual value 8
+TestGenerateGrid: rendering generated grid with N=1 failed.
+TestGenerateGrid: generating grid with N=10 failed. wrong number of triangles. expected return value 200, actual value 242
+TestGenerateGrid: rendering generated grid with N=10 failed.
+test "TestRenderAdditive" failed: TestRenderSharedVertex: rendering with semi-transparent triangles failed. This might indicate overlaping triangles.
+
+Color Matching:
+test "RenderTriangleStrip" failed: TestRenderTriangleStrip: Your code does not use GL_TRIANGLE_STRIP for drawing!
+test "TrapezodialIntegration" failed: TestTrapezoidalIntegration: failed to integrate f(x): (1, 3) |---> (-1, -2). expected return value -3, actual value 0
+TestTrapezoidalIntegration: failed to integrate f(x): (-1, 0, 1, 2) |---> (0, 2, 0, -2). expected return value 1, actual value 0
+TestTrapezoidalIntegration: failed to integrate f(x): (0, 1, 4, 9, 16, 25, 36, 49, 64, 81) |---> (0, 0.841471, 1.4412, 0.28224, -1.75724, -2.47878, -0.784418, 1.97096, 3.13619, 1.36903). expected return value 50.2916, actual value 0
+test "SpectrumToRgb" failed: TestSpectrumToRgb: spectrum to rgb wrong for constant spectrum f(x)=1 expected return value (128.749, 101.326, 97.1535), actual value (0, 0, 0)
+TestSpectrumToRgb: spectrum to rgb wrong for spectrum f(x)=cos(x) expected return value (-0.265071, 0.352342, -1.03698), actual value (0, 0, 0)
+test "StandardParameters" failed: Program crashed when running the test
+
