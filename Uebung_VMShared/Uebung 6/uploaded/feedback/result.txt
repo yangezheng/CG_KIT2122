@@ -1,0 +1,27 @@
+Total Points: 5 / 20
+
+
+Overview of tests:
+----------------
+ShadowMapping: 4 / 8
+Blending: 1 / 4
+Landscape: 0 / 8
+
+
+Detail of tests:
+----------------
+ShadowMapping:
+test "Test View Projection Light" failed: Point (-5.88989, -10.9385, -10.4583, 1) transformed incorrectly for compute_view_projection_light((-23.4974, 9.41923, -24.5783), (-0.754108, -0.622602, 0.209015), 1.05535, 5.7443, 70.2772, (-0.777286, 0.413294, -0.474357)), excpected result after division by .w is (2.02219, -19.5483, 0.348931, 1), computed result is (0.540131, -0.534013, 1.35508, 1)
+
+Blending:
+test "initialize_alpha_blending" failed: BlendFunc set incorrectly, should be set to (GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA) but is set to GL_FUNC_ADD(GL_SRC_ALPHA, GL_ONE_MINUS_CONSTANT_ALPHA)
+test "initialize_premultiplied_blending" failed: BlendFunc set incorrectly, should be set to (GL_ONE, GL_ONE_MINUS_SRC_ALPHA) but is set to GL_FUNC_ADD(GL_ONE, GL_ONE_MINUS_CONSTANT_ALPHA)
+
+Landscape:
+test "Test vertex displacement" failed: vertex shader output does not match reference solution for the following varyings: world_position, gl_Position, 
+test "Landscape texturing" failed: Image comparison failed.
+test "Underwater absorption" failed: Image comparison failed.
+test "Water surface blending" failed: Image comparison failed.
+test "Water surface reflection" failed: Image comparison failed.
+test "Fresnel" failed: Image comparison failed.
+
