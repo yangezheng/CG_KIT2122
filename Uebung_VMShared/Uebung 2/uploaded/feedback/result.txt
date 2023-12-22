@@ -1,0 +1,41 @@
+Total Points: 8 / 20
+
+
+Overview of tests:
+----------------
+Intersect_Sphere: 2 / 4
+Spotlight: 0 / 2
+Phong: 6 / 6
+Whitted: 0 / 4
+Dispersion: 0 / 2
+Fresnel: 0 / 2
+
+
+Detail of tests:
+----------------
+Intersect_Sphere:
+test "IntersectionTestPositive" failed: Found intersection where there should be none: Ray (origin=(5, 5, 5), direction=(0.995037, -0.0995037, 0)) with Sphere (center=(20, 5, 5), radius=1.011)
+test "IntersectionTest" failed: Found intersection where there should be none: Ray (origin=(5, 5, 5), direction=(0.995037, -0.0995037, 0)) with Sphere (center=(20, 5, 5), radius=1.011)
+Found intersection behind ray origin: Ray (origin=(5, 5, 5), direction=(0.995037, -0.0995037, 0)) with Sphere (center=(20, 5, 5), radius=1.011)
+test "IntersectionTestInside" failed: Found intersection where there should be none: Ray (origin=(5, 5, 5), direction=(0.995037, -0.0995037, 0)) with Sphere (center=(20, 5, 5), radius=1.011)
+Found intersection behind ray origin: Ray (origin=(5, 5, 5), direction=(0.995037, -0.0995037, 0)) with Sphere (center=(20, 5, 5), radius=1.011)
+test "IntersectionTestDistanceInside" failed: Wrong intersection distance (-1), expected distance 1. Ray (origin=(0, 0, 0), direction=(0, 0, 1)) with Sphere (center=(0, 0, 0), radius=1)
+
+Spotlight:
+test "TestSpotlight" failed: Directional distribution of light emission not as expected.
+
+Phong:
+All tests of this exercise passed.
+
+Whitted:
+test "Reflection" failed: Image comparison failed, Parameters: Shadow[ ], Ambient[ ], Diffuse[X], Specular[ ], Reflection[X], Transmission[ ], Dispersion[ ], Fresnel[ ], Reference Phong[X]
+test "Transmission" failed: Image comparison failed, Parameters: Shadow[ ], Ambient[ ], Diffuse[X], Specular[ ], Reflection[ ], Transmission[X], Dispersion[ ], Fresnel[ ], Reference Phong[X]
+test "ReflectionTransmission" failed: Image comparison failed, Parameters: Shadow[ ], Ambient[ ], Diffuse[X], Specular[ ], Reflection[X], Transmission[X], Dispersion[ ], Fresnel[ ], Reference Phong[X]
+test "ReflectionTransmissionShadow" failed: Image comparison failed, Parameters: Shadow[X], Ambient[ ], Diffuse[X], Specular[ ], Reflection[X], Transmission[X], Dispersion[ ], Fresnel[ ], Reference Phong[X]
+
+Dispersion:
+test "Dispersion" failed: Image comparison failed, Parameters: Shadow[ ], Ambient[ ], Diffuse[X], Specular[ ], Reflection[ ], Transmission[X], Dispersion[X], Fresnel[ ], Reference Phong[X]
+
+Fresnel:
+test "Fresnel" failed: Image comparison failed, Parameters: Shadow[ ], Ambient[ ], Diffuse[X], Specular[ ], Reflection[ ], Transmission[X], Dispersion[ ], Fresnel[X], Reference Phong[X]
+
