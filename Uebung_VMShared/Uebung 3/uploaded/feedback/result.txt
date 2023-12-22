@@ -1,0 +1,52 @@
+Total Points: 4 / 20
+
+
+Overview of tests:
+----------------
+EvaluateNearest: 2 / 2
+Wrapping: 2 / 2
+EvaluateBilinear: 0 / 4
+MipMapping: 0 / 6
+RayTransform: 0 / 6
+
+
+Detail of tests:
+----------------
+EvaluateNearest:
+All tests of this exercise passed.
+
+Wrapping:
+All tests of this exercise passed.
+
+EvaluateBilinear:
+test "BilinearInside-Range01" failed: Computed texture sample does not match reference solution
+test "BilinearAtBorder" failed: Computed texture sample does not match reference solution. Did you use truncation (for example cast to int) instead of floor?
+test "BilinearPositiveUV" failed: Computed texture sample does not match reference solution. Did you use truncation (for example cast to int) instead of floor?
+
+MipMapping:
+test "CreateMipmap square" failed: Miplevel 1 does not match reference solution
+test "CreateMipmap non-square" failed: Wrong number of miplevels for image of size (1024, 512): got 10, expected 11
+test "ComputeUVAABBSize" failed: Image comparison using the following settings failed:
+Scene:               textured_sphere
+RenderMode:          DUDV
+Texture filter mode: TRILINEAR
+Normal mapping:      disabled
+
+Image comparison using the following settings failed:
+Scene:               aliasing_plane
+RenderMode:          DUDV
+Texture filter mode: TRILINEAR
+Normal mapping:      disabled
+
+test "EvaluateTrilinear" failed: Computed texture sample does not match reference solution
+
+RayTransform:
+test "TransformDirectionAndPosition" failed: result of transform_position does not match reference solution
+test "LocalIntersectionTests" failed: Image comparison using the following settings failed:
+Scene:               go_board
+RenderMode:          NORMAL
+Texture filter mode: 
+Normal mapping:      disabled
+
+test "TransformDirToObjSpace" failed: Transformed coordinate space is incorrect
+
