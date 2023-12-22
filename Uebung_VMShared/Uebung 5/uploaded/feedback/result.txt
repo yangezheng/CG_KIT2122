@@ -1,0 +1,46 @@
+Total Points: 13 / 20
+
+
+Overview of tests:
+----------------
+OpenGL-Shader: 4 / 4
+SceneGraph: 3 / 6
+Phong: 6 / 6
+EnvironmentLighting: 0 / 4
+
+
+Detail of tests:
+----------------
+OpenGL-Shader:
+All tests of this exercise passed.
+
+SceneGraph:
+test "Test scene graph transformation collection" failed: wrong object_to_world matrix at index 11
+wrong world_to_object matrix at index 11
+test failed, attempting grading with swapped matrices ...
+wrong object_to_world matrix at index 1
+wrong world_to_object matrix at index 1
+wrong object_to_world matrix at index 12
+wrong world_to_object matrix at index 12
+test failed, attempting grading with swapped matrices ...
+wrong object_to_world matrix at index 1
+wrong world_to_object matrix at index 1
+wrong object_to_world matrix at index 13
+wrong world_to_object matrix at index 13
+test failed, attempting grading with swapped matrices ...
+wrong object_to_world matrix at index 1
+wrong world_to_object matrix at index 1
+test "Test sphere flake animation" failed: wrong parent_to_node matrix
+wrong parent_to_node matrix
+wrong parent_to_node matrix
+wrong parent_to_node matrix
+
+Phong:
+All tests of this exercise passed.
+
+EnvironmentLighting:
+test "Test prefilter_environment_diffuse" failed: Image comparison for prefilter_environment_diffuse failed
+test "Test prefilter_environment_specular" failed: Image comparison for prefilter_environment_specular with phong exponent 30 failed
+test "Test env_light.vert Shader" failed: vertex shader output does not match reference solution for the following varyings: world_position, world_normal_interpolated, gl_Position, 
+test "Image comparison" failed: Image comparison failed.
+
