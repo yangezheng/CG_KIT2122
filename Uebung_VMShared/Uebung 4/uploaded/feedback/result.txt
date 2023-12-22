@@ -1,0 +1,33 @@
+Total Points: 11.5 / 20
+
+
+Overview of tests:
+----------------
+GaussKernel: 4 / 4
+GaussFilterNaive: 4 / 4
+BuildBVH: 3.5 / 8
+TraverseBVH: 0 / 4
+
+
+Detail of tests:
+----------------
+GaussKernel:
+All tests of this exercise passed.
+
+GaussFilterNaive:
+All tests of this exercise passed.
+
+BuildBVH:
+test "Test 1 Triangle" failed: The node AABB is wrong.
+test "Test 6 Triangles" failed: The node AABB is wrong.
+test "Test Median Split" failed: triangle in left set is "bigger" than an element in the right set, split axis=1
+triangle in right set: (-0.444307, 0.183987, 0.771949), (-0.432399, 0.167262, 0.774615), (-0.428841, 0.170397, 0.781012)
+wrong sorted triangle is: (0.561671, 0.157526, 0.608149), (0.567241, 0.155635, 0.594444), (0.580543, 0.19873, 0.591675)
+
+
+TraverseBVH:
+test "Test Traverse Triangles" failed: Rendering one triangle failed
+Rendering two triangles failed
+test "Test Traverse Monkey" failed: Rendering monkey failed
+test "Count AABB Intersects for Monkey" failed: Rendering monkey failed
+
