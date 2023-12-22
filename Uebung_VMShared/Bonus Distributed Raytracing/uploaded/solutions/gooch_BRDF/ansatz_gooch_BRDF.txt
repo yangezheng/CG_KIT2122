@@ -1,0 +1,8 @@
+instead of using evaluate_phone_BRDF(), i added a method evaluate_gooch_BRDF.
+Basically it adds a unrealistic effect on the existing phong model: imaging
+the lights have warm color, so all the sides that are facing to the lights will
+have warm color blending into its color rendering. And the sides that are not
+facing the lights, will have a cold color blending into its rendering. I achieve
+this effect by following the formular from the paper: Amy Gooch, Bruce Gooch, Peter Shirley, 
+Elaine Cohen. A Non-Photorealistic Lighting Model For Automatic Technical 
+Illustration. Department of Computer Science University of Utah.

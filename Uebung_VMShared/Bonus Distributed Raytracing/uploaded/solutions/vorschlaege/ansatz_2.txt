@@ -1,0 +1,5 @@
+1. Get the focal_point, which I used interesect_plane() method to get the parametric
+distance, and then just multiply the ray.direction.
+2. iterate dof_rays times, each time generate a new ray with position which generated
+from uniform_sample_disk() and inverse it to world_space.
+3. sum the contribution and divide the dof_rays.

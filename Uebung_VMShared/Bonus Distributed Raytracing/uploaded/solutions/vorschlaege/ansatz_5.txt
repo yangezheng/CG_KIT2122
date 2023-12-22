@@ -1,0 +1,3 @@
+iterates indirect_rays times, each time shoot out a ray of the hemisphere direction,
+and the shooted ray will also recursively shoot more rays, until the depth reachs
+the given maximun. Use BRDF to get a value, sum it all up and average out.

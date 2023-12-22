@@ -1,0 +1,3 @@
+iterate ao_rays time, each time shoot out a ray, and see if it hits other objects,
+use the function to get a value of the color, basically more objects it hits and 
+the closer the objects are, the darker its color will be.

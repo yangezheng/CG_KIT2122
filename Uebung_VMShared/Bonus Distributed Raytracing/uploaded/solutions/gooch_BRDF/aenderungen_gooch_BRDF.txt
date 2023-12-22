@@ -1,0 +1,8 @@
+i changed following files:
+
+.\cg_exercise_05\05_distributed\src\exercise_05.cpp
+.\cg_exercise_05\cglib\src\rt\renderer.cpp
+.\cg_exercise_05\cglib\include\cglib\rt\renderer.h
+
+
+no new files was created.

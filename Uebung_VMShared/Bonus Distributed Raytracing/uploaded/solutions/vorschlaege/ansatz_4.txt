@@ -1,0 +1,4 @@
+for each light sources, it iterates shadow_rays times, each time shoot out 
+a ray and see if it's visible. And use a function suchas phone_BRDF() and
+get getEmission() to get a value, sum all the value from each rays up and 
+average out.
